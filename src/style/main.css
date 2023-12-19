@@ -1,8 +1,25 @@
 .header {
   background: white;
-  color: blue;
   font-size: 24px;
   display: flex;
   justify-content: space-between;
   padding: 45px 100px 50px 100px;
+  align-items: center;
+}
+
+.footer-container {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+}
+
+.navbar {
+  display: flex;
+  gap: 57px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #FF6060;
 }/*# sourceMappingURL=main.css.map */

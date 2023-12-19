@@ -1,4 +1,4 @@
-import logo from '../assets/logo.png';
+import logo from '../assets/logokasa.svg';
 
 export function Header() {
   return (

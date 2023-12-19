@@ -1,4 +1,5 @@
 import logo from '../assets/logokasa.svg';
+import Navbar from './Navbar/Navbar';
 
 export function Header() {
   return (
@@ -6,16 +7,7 @@ export function Header() {
       <div className="logo">
         <img src={logo} alt="Logo Kasa" />
       </div>
-      <nav className="navbar">
-        <ul>
-          <li>
-            <a href="#accueil">Accueil</a>
-          </li>
-          <li>
-            <a href="#apropos">À propos</a>
-          </li>
-        </ul>
-      </nav>
+      <Navbar/>
     </header>
   );
 }

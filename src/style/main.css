@@ -18,12 +18,19 @@ body {
   justify-content: center;
   border-radius: 25px;
   background-image: url("/src/assets/bannerhome.png");
+  margin: auto;
+  /*     filter: brightness(70%);
+   */
 }
 
 .banner-text {
   font-size: 48px;
   color: #FFF;
   font-size: 500;
+}
+
+.banner-img img {
+  border-radius: 25px;
 }
 
 .header {

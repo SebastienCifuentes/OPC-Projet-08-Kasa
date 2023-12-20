@@ -1,4 +1,9 @@
+@import "./Utils/mixins";
+@import "./Utils/variables";
+@import "./Base/base";
+
+@import "../components/Bannerhome/banner";
 @import "../components/Header/header";
 @import "../components/Footer/footer";
-@import "../components/Navbar/navbar"
+@import "../components/Navbar/navbar";
 

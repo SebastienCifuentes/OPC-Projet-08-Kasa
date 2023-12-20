@@ -1,9 +1,16 @@
 .navbar {
     display: flex;
     gap: 57px;
+
+    &_button-home,
+    &_button-about {
+        color: $primary-color;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            text-decoration-line: underline;
+        }
+    }
 }
 
-.navbar a {
-    text-decoration: none;
-    color: #FF6060;
-}

@@ -7,7 +7,7 @@ export const Home = () => {
   return (
     <div>
       <Bannerhome />
-      <h1>Emplacement des cards</h1>
+      <h1>Emplacement des cards TESSSST</h1>
       {data.map((d) => (
         <p>{d.title}</p>
       ))}

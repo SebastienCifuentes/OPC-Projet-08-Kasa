@@ -74,5 +74,19 @@ body {
   justify-content: center;
   background: #f6f6f6;
   border-radius: 25px;
-  margin: 0px 100px;
+  margin: 40px 100px 0px 100px;
+  gap: 50px;
+}
+
+.card_logement {
+  width: 340px;
+  height: 340px;
+  margin: 55px 0px;
+}
+
+.card_logement img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
 }/*# sourceMappingURL=main.css.map */

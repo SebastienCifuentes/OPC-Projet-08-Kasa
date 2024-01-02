@@ -1,7 +1,7 @@
 import React from 'react';
 
-
-
-return (
+export const Logement = () => {
+  return (
     <h1>test</h1>
-)
+  )
+};

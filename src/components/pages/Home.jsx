@@ -8,7 +8,7 @@ export const Home = () => {
   return (
     <div>
       <Bannerhome />
-      <div> {/* Ici css pour le thumbnail(fond gris, flex etc etc) */}
+      <div className="cards-container"> {/* Ici css pour le thumbnail(fond gris, flex etc etc) */}
         {data.map((d) => (
           <Card title={d.title} cover={d.cover} />
         ))}

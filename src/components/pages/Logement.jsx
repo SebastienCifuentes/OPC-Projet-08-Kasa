@@ -1,7 +1,9 @@
 import React from 'react';
 
-export const Logement = () => {
+export default function Logement() {
   return (
-    <h1>test</h1>
-  )
-};
+    <div>
+      <h1>Fiche logement</h1>
+    </div>
+  );
+}

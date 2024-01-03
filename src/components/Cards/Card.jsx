@@ -3,7 +3,7 @@ export const Card = (props) => {
   return (
     <div className="card_logement"> {/* Ici css d'une card */}
       <img src={props.cover} alt="Cover img" />
-      <p>{props.title}</p>
+      <div className="card_logement_title">{props.title}</div>
     </div>
   );
 };

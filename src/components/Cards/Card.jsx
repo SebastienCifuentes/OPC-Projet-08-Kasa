@@ -1,9 +1,14 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
 export const Card = (props) => {
   console.log(props);
+
+  const url = `/logement/${props.id}`
   return (
-    <div className="card_logement"> {/* Ici css d'une card */}
+    <Link to={url} className="card_logement"> {/* Ici css d'une card */}
       <img src={props.cover} alt="Cover img" />
       <div className="card_logement_title">{props.title}</div>
-    </div>
+    </Link>
   );
 };

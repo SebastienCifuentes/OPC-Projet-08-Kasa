@@ -10,6 +10,19 @@ body {
   max-width: 1440px;
 }
 
+.mainAbout {
+  margin: 38px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.collaspse_container {
+  max-width: 1023px;
+  width: 100%;
+  margin-top: 38px;
+}
+
 .banner-container {
   position: relative;
   max-width: 1240px;
@@ -93,4 +106,83 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
+}
+
+.collapseContainer {
+  margin-bottom: 30px;
+  background-color: #FF6060;
+  border-radius: 5px;
+}
+
+.collapseContainer:last-child {
+  margin-bottom: 0;
+}
+
+.collapseTitleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 0 20px;
+  border-radius: 10px;
+  height: 50px;
+}
+
+.collapseTitle {
+  color: white;
+  font-size: 18px;
+}
+
+.chevron {
+  transition: all 0.25s ease-in-out;
+}
+
+.chevron.up {
+  transform: rotate(-180deg);
+}
+
+.collapseButton:hover {
+  cursor: pointer;
+}
+
+.collapseTexteContainer {
+  border-radius: 0px 0px 5px 5px;
+  height: 0px;
+  width: 100%;
+  overflow: hidden;
+  transition: height ease 0.25s;
+}
+
+.collapseTexte {
+  padding: 16px 20px 20px 20px;
+  font-size: 18px;
+}
+
+.primary {
+  background: #F6F6F6;
+  color: #FF6060;
+}
+
+.content {
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+/*** Mobile ***/
+@media (max-width: 768px) {
+  .collapseContainer {
+    margin-bottom: 20px;
+  }
+  .collapseTitleContainer {
+    border-radius: 5px;
+  }
+  .collapseTitle {
+    font-size: 13px;
+  }
+  .chevron {
+    width: 30px;
+  }
+  .collapseTexte {
+    padding: 12px 20px 20px 20px;
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=main.css.map */

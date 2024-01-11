@@ -13,7 +13,6 @@ export default function Logement() {
 
   return (
     <div>
-      <h1>Slideshow</h1>
       <Slideshow pictureList={house.pictures} />
       <h1>{house.title}</h1>
       <h2>{house.location}</h2>

@@ -10,13 +10,13 @@
     justify-content: center;
     align-items: center;
 }
-  
+
 .slider {
     width: 100%;
     white-space: nowrap;
     transition: ease 1000ms;
 }
-  
+
 .sliderImageContainer {
     display: inline-flex;
     flex-direction: column;
@@ -36,16 +36,16 @@
 .numberContainer{
     justify-content: center;
     size: 18px;
-    font-weight: bold;
+    font-weight: 500;
     width: 100%;
     margin-bottom: 25px;
     position: absolute;
     z-index: 1;
     color: white;
 }
-  
+
 /* Buttons */
-  
+
 .arrowContainer{
     display: flex;
     justify-content: space-between;

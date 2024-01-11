@@ -1,5 +1,5 @@
 import React from 'react';
-import Carrousel from "../Carrousel/Carrousel";
+import Slideshow from "../Slideshow/Slideshow";
 import { useParams } from 'react-router-dom';
 import data from "../../datas/logements.json";
 import Collapse from '../Collapse/Collapse';
@@ -13,7 +13,8 @@ export default function Logement() {
 
   return (
     <div>
-      <h1>Carrousel</h1>
+      <h1>Slideshow</h1>
+      <Slideshow pictureList={house.pictures} />
       <h1>{house.title}</h1>
       <h2>{house.location}</h2>
       <Collapse title={"Description"} texte={house.description} />

@@ -11,14 +11,22 @@ body {
 }
 
 .banner-container {
+  position: relative;
   max-width: 1240px;
   height: 223px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 25px;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/src/assets/bannerhome.png");
   margin: auto;
+}
+
+.banner-container img {
+  border-radius: 25px;
+  filter: brightness(70%);
+}
+
+.banner-text-container {
+  position: absolute;
 }
 
 .banner-text {

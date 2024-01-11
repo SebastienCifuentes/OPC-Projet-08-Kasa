@@ -1,11 +1,12 @@
 import React from 'react';
-import Bannerabout from '../Bannerabout/Bannerabout';
+import Banner from '../Banner/Banner';
+import BannerImage from '../../assets/bannerabout.png';
 
 export default function About() {
-    return (
-        <div>
-            <Bannerabout />
-            <h1>A PROPOS</h1>
-        </div>
-    )
+  return (
+    <div>
+      <Banner pathimage={BannerImage} text={''} />
+      <h1>A PROPOS</h1>
+    </div>
+  );
 }

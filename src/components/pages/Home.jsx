@@ -1,16 +1,22 @@
-import React from "react";
-import Bannerhome from "../Bannerhome/Bannerhome";
-import data from "../../datas/logements.json";
-import { Card } from "../Cards/Card";
+import React from 'react';
+import Banner from '../Banner/Banner';
+import data from '../../datas/logements.json';
+import { Card } from '../Cards/Card';
+import BannerImage from '../../assets/bannerhome.png';
 
 export const Home = () => {
   console.log(data);
   return (
     <div>
-      <Bannerhome />
-      <div className="cards-container"> {/* Ici css pour le thumbnail(fond gris, flex etc etc) */}
+      <Banner
+        pathimage={BannerImage}
+        text={'Chez vous, partout et ailleurs'}
+      />
+      <div className="cards-container">
+        {' '}
+        {/* Ici css pour le thumbnail(fond gris, flex etc etc) */}
         {data.map((d) => (
-          <Card title={d.title} cover={d.cover} />
+          <Card title={d.title} cover={d.cover} id={d.id} />
         ))}
       </div>
     </div>

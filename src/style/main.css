@@ -91,8 +91,9 @@ body {
   justify-content: center;
   background: #F6F6F6;
   border-radius: 25px;
-  margin: 40px 100px 0px 100px;
+  margin: 40px 100px 50px 100px;
   gap: 50px;
+  padding: 50px 0px;
 }
 
 .cardBg {
@@ -113,14 +114,13 @@ body {
 .card_logement {
   width: 340px;
   height: 340px;
-  margin: 55px 0px;
   text-decoration: none;
   position: relative;
 }
 
 .card_logement_title {
-  bottom: 70px;
-  position: relative;
+  bottom: 20px;
+  position: absolute;
   color: #f6f6f6;
   padding: 0 20px;
   font-size: 18px;

@@ -1,17 +1,14 @@
 import React from 'react';
-import Banner from '../Banner/Banner';
+import Banner from '../../components/Banner/Banner';
 import data from '../../datas/logements.json';
-import { Card } from '../Cards/Card';
+import { Card } from '../../pages/Home/components/Cards/Card';
 import BannerImage from '../../assets/bannerhome.png';
 
 export const Home = () => {
   console.log(data);
   return (
     <div>
-      <Banner
-        pathimage={BannerImage}
-        text={'Chez vous, partout et ailleurs'}
-      />
+      <Banner pathimage={BannerImage} text={'Chez vous, partout et ailleurs'} />
       <div className="cards-container">
         {' '}
         {/* Ici css pour le thumbnail(fond gris, flex etc etc) */}

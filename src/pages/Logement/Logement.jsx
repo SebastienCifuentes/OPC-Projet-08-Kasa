@@ -11,7 +11,7 @@ export default function Logement() {
   console.log(house);
 
   return (
-    <div>
+    <div className='main_logement'>
       <Slideshow pictureList={house.pictures} />
       <h1>{house.title}</h1>
       <h2>{house.location}</h2>

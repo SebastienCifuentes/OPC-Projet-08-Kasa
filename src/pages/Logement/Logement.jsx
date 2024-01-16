@@ -16,6 +16,7 @@ export default function Logement() {
       <h1>{house.title}</h1>
       <h2>{house.location}</h2>
       <Collapse title={'Description'} texte={house.description} />
+      <Collapse title={'Équipements'} texte={house.equipments} />
     </div>
   );
 }

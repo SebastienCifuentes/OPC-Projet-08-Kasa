@@ -1,0 +1,29 @@
+.notfound_container {
+    color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.notfound_number {
+    @include flex-center;
+    font-size: 288px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.notfound_text {
+    @include flex-center;
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.notfound_backbtn {
+    @include flex-center;
+    color: $primary-color;
+    font-size: 18px;
+    margin: 139px 0 139px 0;
+}

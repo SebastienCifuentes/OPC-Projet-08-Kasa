@@ -304,4 +304,40 @@ body {
   max-width: 1240px;
   display: flex;
   flex-direction: column;
+}
+
+.notfound_container {
+  color: #FF6060;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.notfound_number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 288px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.notfound_text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: 500;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+.notfound_backbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FF6060;
+  font-size: 18px;
+  margin: 139px 0 139px 0;
 }/*# sourceMappingURL=main.css.map */

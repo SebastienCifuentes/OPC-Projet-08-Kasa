@@ -1,7 +1,8 @@
 import React from 'react';
-import Slideshow from '../../components/Slideshow/Slideshow';
-import { useParams } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
 import data from '../../datas/logements.json';
+import Slideshow from '../../components/Slideshow/Slideshow';
 import Collapse from '../../components/Collapse/Collapse';
 
 export default function Logement() {
@@ -15,8 +16,14 @@ export default function Logement() {
       <Slideshow pictureList={house.pictures} />
       <h1>{house.title}</h1>
       <h2>{house.location}</h2>
-      <Collapse title={'Description'} texte={house.description} />
-      <Collapse title={'Équipements'} texte={house.equipments} />
+      <div className="collapse_container">
+        <div className="collapse_block">
+          <Collapse title={'Description'} texte={house.description} />
+        </div>
+        <div className="collapse_block">
+          <Collapse title={'Équipements'} texte={house.equipments} />
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,29 +1,68 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import data from '../../datas/logements.json';
+import logementsInfos from '../../datas/logements.json';
 import Slideshow from '../../components/Slideshow/Slideshow';
 import Collapse from '../../components/Collapse/Collapse';
+import RateScale from '../../components/RateScale/RateScale';
 
 export default function Logement() {
-  const url = useParams();
-  console.log(url);
-  const house = data.find((item) => item.id === url.id);
-  console.log(house);
+
+  const { id } = useParams();
+  const actualLogement = logementsInfos.find((logement) => logement.id === id);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!actualLogement) {
+      navigate("*")
+    }
+  }, [actualLogement, navigate])
+
+    if (actualLogement){
+
+    const description = actualLogement ? actualLogement.description : "";
+    const equipments = actualLogement ? actualLogement.equipments:"";
+    const rating = actualLogement ? actualLogement.rating : 0;
+    const tags = actualLogement ? actualLogement.tags : "";
+    const title = actualLogement ? actualLogement.title : "";
+    const location = actualLogement ? actualLogement.location : "";
+    const host = actualLogement ? actualLogement.host : "";
+  
 
   return (
     <div className='main_logement'>
-      <Slideshow pictureList={house.pictures} />
-      <h1>{house.title}</h1>
-      <h2>{house.location}</h2>
+      <Slideshow pictureList={actualLogement.pictures} />
+      <div className="infoHost_container">
+        <div className="titleTags_container">
+          <div className="logement_titleInfos">
+            <h1>{title}</h1>
+            <h2>{location}</h2>
+          </div>
+          <div className="logement_tags">
+            {tags.map((tag, index) => (
+              <span key={index} className="tag">{tag}</span>
+            ))}
+          </div>
+        </div>
+        <div className="hostRate_container">
+          <div className="logement_host_container">
+            <h3>{host.name}</h3>
+            <img src={host.picture} alt="Host picture" />
+          </div>
+          <div className="logement_rate_container">
+            <RateScale scaleValue={RateScale.rating} /> 
+          </div>
+        </div>
+      </div>
       <div className="collapse_container">
         <div className="collapse_block">
-          <Collapse title={'Description'} texte={house.description} />
+          <Collapse title={'Description'} texte={actualLogement.description} />
         </div>
         <div className="collapse_block">
-          <Collapse title={'Équipements'} texte={house.equipments} />
+          <Collapse title={'Équipements'} texte={actualLogement.equipments} />
         </div>
       </div>
     </div>
   );
+  }
 }

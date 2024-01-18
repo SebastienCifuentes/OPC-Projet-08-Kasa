@@ -14,3 +14,27 @@
 .collapse_block {
     width: 582px;
 }
+
+.logement_tags {
+    display: flex;
+    height: 25px;
+    gap: 10px;
+}
+
+.tag {
+    color: #FFFFFF;
+    @include flex-center;
+    font-size: 14px;
+    border-radius: 10px;
+    background-color: $primary-color;
+    padding: 3px 40px;
+}
+
+.host img {
+    width: 64px;
+    height: 64px;
+}
+
+.infoHost_container {
+    display: flex;
+}

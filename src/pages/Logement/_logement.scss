@@ -15,10 +15,27 @@
     width: 582px;
 }
 
+.logement_titleInfos h1 {
+    font-size: 36px;
+    font-weight: 500;
+    color: $primary-color;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.logement_titleInfos h2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: $primary-color;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
 .logement_tags {
     display: flex;
     height: 25px;
     gap: 10px;
+    margin-bottom: 24px;
 }
 
 .tag {
@@ -27,14 +44,42 @@
     font-size: 14px;
     border-radius: 10px;
     background-color: $primary-color;
-    padding: 3px 40px;
-}
-
-.host img {
-    width: 64px;
-    height: 64px;
+    padding: 3px 30px;
 }
 
 .infoHost_container {
     display: flex;
+    justify-content: space-between;
+}
+
+.hostRate_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.logement_host_container {
+    display: flex;
+    gap: 10px;
+    padding-top: 24px;
+}
+
+.logement_host_container img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+.logement_host_container h3 {
+    color: $primary-color;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.logement_rate_container {
+    display: flex;
+    justify-content:flex-end;
+}
+
+.rateContainer img {
+    width: 24px;
 }

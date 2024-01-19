@@ -68,7 +68,7 @@ export default function Logement() {
         </div>
         <div className="collapse_block">
           <Collapse title={'Équipements'} texte={
-            <ul>
+            <ul className="equipmentsContainer">
               {equipments.map((infos, index) =>
                 <li>{infos}</li>)}
             </ul>

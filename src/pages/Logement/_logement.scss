@@ -47,6 +47,15 @@
     padding: 3px 30px;
 }
 
+.equipmentsContainer {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-top: 0px;
+}
+
 .infoHost_container {
     display: flex;
     justify-content: space-between;

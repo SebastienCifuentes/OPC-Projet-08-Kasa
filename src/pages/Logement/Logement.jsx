@@ -28,6 +28,10 @@ export default function Logement() {
     const location = actualLogement ? actualLogement.location : "";
     const host = actualLogement ? actualLogement.host : "";
 
+    const name = host.name
+    const firstname = name.split(" ")[0]
+    const lastname = name.split(" ")[1]
+
   return (
     <div className='main_logement'>
       <Slideshow pictureList={actualLogement.pictures} />
@@ -45,8 +49,13 @@ export default function Logement() {
         </div>
         <div className="hostRate_container">
           <div className="logement_host_container">
-            <h3>{host.name}</h3>
-            <img src={host.picture} alt="Host picture" />
+            <div className="hostName">
+              <p className=''>{firstname}</p>
+              <p className=''>{lastname}</p>
+            </div>
+            <div className="hostProfilePicture">
+              <img src={host.picture} alt="Host picture" />
+            </div>
           </div>
           <div className="logement_rate_container">
             <RateScale scaleValue={rating} /> 

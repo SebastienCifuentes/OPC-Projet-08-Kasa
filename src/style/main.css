@@ -361,33 +361,53 @@ body {
 .hostRate_container {
   display: flex;
   flex-direction: column;
+  gap: 21px;
 }
 
 .logement_host_container {
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
   gap: 10px;
   padding-top: 24px;
 }
 
-.logement_host_container img {
+.hostProfilePicture img {
   width: 64px;
   height: 64px;
   border-radius: 50%;
 }
 
-.logement_host_container h3 {
+.hostName {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.logement_host_container p {
   color: #FF6060;
   font-size: 18px;
   font-weight: 500;
-}
-
-.logement_rate_container {
+  margin: 0px;
   display: flex;
   justify-content: flex-end;
 }
 
+.logement_rate_container {
+  width: 196px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.rateContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
 .rateContainer img {
-  width: 24px;
+  width: 36px;
+  height: 24px;
 }
 
 .notfound_container {

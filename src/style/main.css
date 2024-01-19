@@ -137,7 +137,6 @@ body {
 
 .collapseContainer {
   margin-bottom: 30px;
-  background-color: #FF6060;
   border-radius: 5px;
 }
 
@@ -188,6 +187,10 @@ body {
 .primary {
   background: #F6F6F6;
   color: #FF6060;
+}
+
+.primaryBackground {
+  background: #FF6060;
 }
 
 .content {

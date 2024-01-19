@@ -1,6 +1,5 @@
 .collapseContainer{
     margin-bottom: 30px;
-    background-color: #FF6060;
     border-radius: 5px;
 }
 
@@ -50,7 +49,11 @@
 
 .primary {
     background: #F6F6F6;
-    color: #FF6060;
+    color: $primary-color;
+}
+
+.primaryBackground {
+    background: $primary-color;
 }
 
 .content {

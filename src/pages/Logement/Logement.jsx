@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useLayoutEffect } from 'react';
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import logementsInfos from '../../datas/logements.json';
@@ -27,7 +27,6 @@ export default function Logement() {
     const title = actualLogement ? actualLogement.title : "";
     const location = actualLogement ? actualLogement.location : "";
     const host = actualLogement ? actualLogement.host : "";
-  
 
   return (
     <div className='main_logement'>
@@ -50,16 +49,21 @@ export default function Logement() {
             <img src={host.picture} alt="Host picture" />
           </div>
           <div className="logement_rate_container">
-            <RateScale scaleValue={RateScale.rating} /> 
+            <RateScale scaleValue={rating} /> 
           </div>
         </div>
       </div>
       <div className="collapse_container">
         <div className="collapse_block">
-          <Collapse title={'Description'} texte={actualLogement.description} />
+          <Collapse title={'Description'} texte={description} />
         </div>
         <div className="collapse_block">
-          <Collapse title={'Équipements'} texte={actualLogement.equipments} />
+          <Collapse title={'Équipements'} texte={
+            <ul>
+              {equipments.map((infos, index) =>
+                <li>{infos}</li>)}
+            </ul>
+          } />
         </div>
       </div>
     </div>

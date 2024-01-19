@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import chevron from '../../assets/chevron.png';
 
 export default function Collapse({ title, texte }) {
@@ -7,6 +7,8 @@ export default function Collapse({ title, texte }) {
   const toggle = () => {
     setOpen(!open);
   };
+
+  const collapseTexteRef = useRef();
 
   return (
     <div className="collapseContainer">
@@ -22,7 +24,7 @@ export default function Collapse({ title, texte }) {
       </div>
       <div
         className="collapseTexteContainer secondaryBackground"
-        style={open ? { height: 'fit-content' } : { height: '0px' }}
+        ref= {collapseTexteRef} style={open ? { height: collapseTexteRef.current.scrollHeight + "px"} : { height: '0px' }}
       >
         <div className="primary collapseTexte">{texte}</div>
       </div>

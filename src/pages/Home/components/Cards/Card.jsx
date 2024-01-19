@@ -3,12 +3,9 @@ import { Link } from 'react-router-dom';
 
 
 export const Card = (props) => {
-  console.log(props);
 
   const url = `/logement/${props.id}`
-  console.log(props.id)
   
-
   return (
     <Link to={url} className="card_logement"> {/* Ici css d'une card */}
       <div className="cardBg"></div>

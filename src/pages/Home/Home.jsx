@@ -5,7 +5,7 @@ import { Card } from '../../pages/Home/components/Cards/Card';
 import BannerImage from '../../assets/bannerhome.png';
 
 export const Home = () => {
-  console.log(data);
+  
   return (
     <div>
       <Banner pathimage={BannerImage} text={'Chez vous, partout et ailleurs'} />

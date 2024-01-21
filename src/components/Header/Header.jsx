@@ -1,7 +1,7 @@
 import logo from '../../assets/logokasa.svg';
-import Navbar from '../Navbar/Navbar';
+import { Navbar } from '../Navbar/Navbar';
 
-export function Header() {
+export const Header = () => {
   return (
     <header className="header">
       <div className="logo">
@@ -10,4 +10,4 @@ export function Header() {
       <Navbar />
     </header>
   );
-}
+};

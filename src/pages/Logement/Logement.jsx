@@ -1,17 +1,18 @@
 import React from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import logementsInfos from '../../datas/logements.json';
 import { Slideshow } from '../../components/Slideshow/Slideshow';
 import { Collapse } from '../../components/Collapse/Collapse';
 import { RateScale } from '../Home/components/RateScale/RateScale';
+import { NotFound } from '../NotFound/NotFound';
 
 export const Logement = () => {
   const { id } = useParams();
   const actualLogement = logementsInfos.find((logement) => logement.id === id);
-  const navigate = useNavigate();
+
 
   if (!actualLogement) {
-    navigate('*');
+    return <NotFound />;
   }
 
   if (actualLogement) {

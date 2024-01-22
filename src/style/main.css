@@ -76,6 +76,11 @@ body {
   align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 145px;
+  }
+}
 .footer-container {
   width: 100%;
   height: 209px;

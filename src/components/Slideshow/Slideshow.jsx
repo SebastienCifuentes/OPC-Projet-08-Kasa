@@ -33,7 +33,7 @@ export const Slideshow = ({ pictureList }) => {
       <div className="arrowContainer" style={{ display: styleDisplay }}>
         <p
           className="previous"
-          onClick={setIndex((curIndex) =>
+          onClick={() => setIndex((curIndex) =>
             curIndex === 0 ? lenghtPictureList - 1 : curIndex - 1
           )}
         >
@@ -42,7 +42,7 @@ export const Slideshow = ({ pictureList }) => {
         </p>
         <p
           className="next"
-          onClick={setIndex((curIndex) =>
+          onClick={() => setIndex((curIndex) =>
             curIndex === lenghtPictureList - 1 ? 0 : curIndex + 1
           )}
         >

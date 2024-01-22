@@ -8,3 +8,8 @@
     align-items: center;
 }
 
+@media screen and (max-width: $maxwidth) {
+    .logo {
+        width: 145px;
+    }
+}

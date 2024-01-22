@@ -7,6 +7,14 @@
     margin: 40px 100px 50px 100px;
     gap: 50px;
     padding: 50px 0px;
+
+    @media screen and (max-width: $maxwidth) {
+        margin: 0;
+        background: none;
+        padding-top: 22px;
+        padding-bottom: 27px;
+        gap: 20px;
+    }
 }
 
 .cardBg {
@@ -28,6 +36,11 @@
     height: 340px;
     text-decoration: none;
     position: relative;
+
+    @media screen and (max-width: $maxwidth) {
+        width: 335px;
+        height: 255px;
+    }
 }
 
 .card_logement_title {
@@ -39,8 +52,8 @@
 }
 
 .card_logement img {
-    width: 340px;
-    height: 340px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 10px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.50) 100%);

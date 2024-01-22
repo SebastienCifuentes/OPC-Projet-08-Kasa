@@ -12,6 +12,12 @@
             text-decoration-line: underline;
         }
     }
+    
+    @media screen and (max-width: $maxwidth) {
+        font-size: 12px;
+        text-transform: uppercase;
+        gap: 26px;
+    }
 }
 
 .active {

@@ -9,7 +9,13 @@
 }
 
 @media screen and (max-width: $maxwidth) {
-    .logo {
+    .logo img {
         width: 145px;
+        height: 47px;
+    }
+
+    .header {
+        padding: 20px 20px 27px 20px;
     }
 }
+

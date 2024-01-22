@@ -102,6 +102,19 @@ body {
   padding-top: 66px;
 }
 
+@media screen and (max-width: 768px) {
+  .footer-container {
+    padding: 0;
+  }
+  .footer-container img {
+    width: 122px;
+    height: 40px;
+  }
+  .footer-container p {
+    font-size: 12px;
+    width: 134px;
+  }
+}
 .navbar {
   display: flex;
   gap: 57px;

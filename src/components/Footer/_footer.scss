@@ -12,3 +12,19 @@
     justify-content: center;
     padding-top: 66px;
 }
+
+@media screen and (max-width: $maxwidth) {
+    .footer-container {
+        padding: 0;
+    }
+
+    .footer-container img {
+        width: 122px;
+        height: 40px;
+    }
+
+    .footer-container p {
+        font-size: 12px;
+        width: 134px;
+    }
+}

@@ -71,6 +71,8 @@
     
     .collapseTitleContainer {
         border-radius: 5px;
+        height: 30px;
+        padding: 10px;
     }
 
     .collapseTitle {
@@ -81,8 +83,12 @@
         width: 30px;
     }
     
-    .collapseTexte{
-        padding: 12px 20px 20px 20px;
+    .collapseTexte {
+        padding: 20px;
         font-size: 12px;
+    }
+
+    .collapseButton img {
+        width: 20px;
     }
 }

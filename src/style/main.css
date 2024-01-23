@@ -415,7 +415,6 @@ body {
 
 .logement_tags {
   display: flex;
-  height: 25px;
   gap: 10px;
   margin-bottom: 24px;
 }
@@ -518,9 +517,8 @@ body {
   }
   .logement_tags {
     width: 100%;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
     flex-wrap: wrap;
-    height: 18px;
   }
   .titleTags_container {
     width: 100%;

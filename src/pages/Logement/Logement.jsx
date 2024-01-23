@@ -28,6 +28,8 @@ export const Logement = () => {
     const firstname = name.split(' ')[0];
     const lastname = name.split(' ')[1];
 
+    document.title = "Kasa | " + actualLogement.title;
+
     return (
       <div className="main_logement">
         <Slideshow pictureList={actualLogement.pictures} />

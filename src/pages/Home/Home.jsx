@@ -5,6 +5,9 @@ import { Card } from '../../pages/Home/components/Cards/Card';
 import BannerImage from '../../assets/bannerhome.png';
 
 export const Home = () => {
+
+  document.title = "Kasa | Accueil";
+
   return (
     <div>
       <Banner pathimage={BannerImage} text={'Chez vous, partout et ailleurs'} />

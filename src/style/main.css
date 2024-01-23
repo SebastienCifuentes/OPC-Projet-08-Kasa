@@ -368,13 +368,17 @@ body {
     border-radius: 10px;
   }
   .previous img, .next img {
-    width: 20px;
+    width: 24px;
+    height: 24px;
   }
   .numberContainer {
     display: none !important;
   }
   .sliderImageContainer {
     height: 255px;
+  }
+  .arrowContainer {
+    padding: 2px;
   }
 }
 .main_logement {
@@ -495,6 +499,77 @@ body {
   height: 24px;
 }
 
+@media screen and (max-width: 768px) {
+  .main_logement {
+    width: 100%;
+    padding: 0px 20px;
+  }
+  .infoHost_container {
+    width: 100%;
+    flex-direction: column;
+  }
+  .logement_titleInfos h1 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  .logement_titleInfos h2 {
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  .logement_tags {
+    width: 100%;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+    height: 18px;
+  }
+  .titleTags_container {
+    width: 100%;
+  }
+  .tag {
+    font-size: 10px;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .hostRate_container {
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-bottom: 14px;
+    justify-content: space-between;
+  }
+  .rateContainer {
+    width: 98px;
+  }
+  .rateContainer img {
+    width: 16px;
+  }
+  .logement_rate_container {
+    justify-content: flex-start;
+  }
+  .logement_host_container {
+    padding: 0;
+  }
+  .logement_host_container p {
+    font-size: 12px;
+  }
+  .hostProfilePicture {
+    display: flex;
+  }
+  .hostProfilePicture img {
+    width: 32px;
+    height: 32px;
+  }
+  .collapse_container {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    padding-bottom: 27px;
+  }
+  .collapse_block {
+    width: 100%;
+  }
+}
 .notfound_container {
   color: #FF6060;
   display: flex;
@@ -529,4 +604,22 @@ body {
   color: #FF6060;
   font-size: 18px;
   margin: 139px 0 139px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .notfound_number {
+    font-size: 96px;
+    margin-top: 86px;
+    margin-bottom: 53px;
+  }
+  .notfound_text {
+    font-size: 18px;
+    text-align: center;
+    padding: 0px 30px;
+  }
+  .notfound_backbtn {
+    margin-top: 113px;
+    margin-bottom: 113px;
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=main.css.map */

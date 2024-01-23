@@ -75,7 +75,8 @@
     }
     
     .previous img, .next img {
-        width: 20px;
+        width: 24px;
+        height: 24px;
     }
 
     .numberContainer {
@@ -86,4 +87,7 @@
         height: 255px;
     }
     
+    .arrowContainer {
+        padding: 2px;
+    }
 }
